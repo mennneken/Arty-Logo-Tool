@@ -4,4 +4,4 @@ This tool is used to modify the color of the Arty Leiso Logo.
 
 ## Usage
 
-Use git site _git_
+https://mennneken.github.io/Arty-Logo-Tool/
