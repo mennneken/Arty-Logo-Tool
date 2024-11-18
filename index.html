@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modificateur Logo Artyleiso</title>
+    <!-- our project just needs Font Awesome Solid + Brands -->
+    <link href="/css/fontawesome.css" rel="stylesheet" />
+    <link href="/css/brands.css" rel="stylesheet" />
+    <link href="/css/solid.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css_reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <main>
+      <section id="preview"></section>
+    </main>
+    <section class="controls">
+      <div class="control color">
+        <label for="colorPicker">Choisir une couleur</label>
+        <input type="color" id="colorPicker" value="#000000" />
+      </div>
+      <div class="control ratio">
+        <label for="sizeMode">Mode de taille</label>
+        <div>
+          <input type="radio" name="sizeMode" id="sizeMode-ratio" value="ratio" checked />
+          <label for="sizeMode-ratio">Ratio original</label>
+        </div>
+        <div>
+          <input type="radio" name="sizeMode" id="sizeMode-square" value="square" />
+          <label for="sizeMode-square">Carré</label>
+        </div>
+      </div>
+      <div class="control size">
+        <label><i class="fa-solid fa-ruler-horizontal"></i> Taille</label>
+        <input type="number" id="width" value="1000" min="1" />
+      </div>
+      <div class="control download-buttons">
+        <button class="btn" id="downloadSvg"><i class="fa-solid fa-download"></i> SVG</button>
+        <button class="btn" id="downloadPng"><i class="fa-solid fa-download"></i> PNG</button>
+      </div>
+    </section>
+  </body>
+</html>

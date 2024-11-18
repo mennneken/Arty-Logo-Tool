@@ -1,0 +1,83 @@
+:root {
+  --gap: 1em;
+  --gap-small: calc(var(--gap) / 2);
+  --gap-large: calc(var(--gap) * 1.5);
+  --gap-x2: calc(var(--gap) * 2);
+  --radius: 1em;
+  --radius-small: calc(var(--radius) * 0.75);
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+}
+
+.controls {
+  position: absolute;
+  bottom: 2vh;
+  left: 50%;
+  transform: translateX(-50%);
+
+  background: rgba(255, 255, 255, 0.28);
+  border-radius: var(--radius);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.1px);
+  -webkit-backdrop-filter: blur(7.1px);
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: top;
+  gap: var(--gap-large);
+  padding: var(--gap-small) var(--gap-large);
+}
+
+.controls .control > label {
+  color: rebeccapurple;
+}
+
+.control {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: var(--gap-small);
+}
+
+.control.color {
+  align-items: center;
+}
+
+.control.color input[type="color"] {
+  height: 3em;
+  width: 3em;
+}
+
+#preview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#preview svg {
+  max-height: 50vmin;
+}
+.btn {
+  padding: var(--gap-small) var(--gap-large);
+  border-radius: var(--radius-small);
+  border: none;
+  cursor: pointer;
+  background-color: rebeccapurple;
+  color: white;
+}
+
+section + section {
+  margin-top: 40px;
+}
